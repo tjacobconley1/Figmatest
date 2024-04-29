@@ -1,0 +1,376 @@
+{
+  "name": "login_button",
+  "version": 33,
+  "source-key": {
+    "type": "figma",
+    "file": "WDymzth8xfHEGd0HZZHQqd",
+    "node": "1:19",
+    "version": "5659418243",
+    "component-id": "00d0e861cb59b4760f0aaf772d02a536e81dc09a"
+  },
+  "default": "prop=Primary",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "LoginButtonBackGroundClicked"
+      },
+      {
+        "type": "text",
+        "id": "Login"
+      },
+      {
+        "type": "group",
+        "id": "input"
+      },
+      {
+        "type": "vector",
+        "id": "LoginButtonBackGroundUnclicked"
+      }
+    ],
+    "modes": {
+      "prop=Primary": {
+        "rules": [
+          {
+            "id": "top_level",
+            "tap-handler": "$on prop=onClick",
+            "is-structured": false,
+            "children": [
+              "LoginButtonBackGroundClicked",
+              "Login",
+              "input"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "LoginButtonBackGroundClicked",
+            "border-radius": 30.0,
+            "drop-shadow": {
+              "color": {
+                "alpha": 0.24705882352941178,
+                "hue": 0.0,
+                "saturation": 0.0,
+                "value": 0.0
+              },
+              "blur": 4.0,
+              "offset-x": 0.0,
+              "offset-y": 4.0,
+              "spread": 0.0,
+              "blend-mode": "normal"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": -4.0
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": 0.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 328.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 50.0
+              }
+            },
+            "vector-content": "login_button_back_ground_clicked.svg"
+          },
+          {
+            "id": "Login",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": -0.5
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": -0.5
+              }
+            },
+            "font-weight": 100.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 0.08627450980392157
+            },
+            "text-content": "$login_text",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": 24.0,
+            "line-height": 1.2999999523162842,
+            "typeface": "K2D"
+          },
+          {
+            "id": "input",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 202.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 16.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 24.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 24.0
+              }
+            },
+            "is-structured": false,
+            "children": "$login_icon",
+            "clip-content": false
+          }
+        ]
+      },
+      "prop=Secondary": {
+        "rules": [
+          {
+            "id": "top_level",
+            "tap-handler": "$on prop=onClick",
+            "is-structured": false,
+            "children": [
+              "LoginButtonBackGroundUnclicked",
+              "Login",
+              "input"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "LoginButtonBackGroundUnclicked",
+            "border-radius": 30.0,
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": 0.0
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": 0.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 328.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 50.0
+              }
+            },
+            "vector-content": "login_button_back_ground_unclicked.svg"
+          },
+          {
+            "id": "Login",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": 0.5
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": -0.5
+              }
+            },
+            "font-weight": 100.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 291.0697674418605,
+              "saturation": 0.9071729957805907,
+              "value": 0.9294117647058824
+            },
+            "text-content": "$login_text",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": 24.0,
+            "line-height": 1.2999999523162842,
+            "typeface": "K2D"
+          },
+          {
+            "id": "input",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 202.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 16.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 24.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 24.0
+              }
+            },
+            "is-structured": false,
+            "children": "$login_icon",
+            "clip-content": false
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "on prop=onClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "login_text": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "login_icon": {
+      "data-type": "list-item",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "prop=Primary",
+      "size": {
+        "width": 328.0,
+        "height": 50.0
+      },
+      "parameters": {
+        "login_text": "Login",
+        "login_icon": [
+          {
+            "type": "vector",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": 0.0
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": 0.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 24.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 24.0
+              }
+            }
+          },
+          {
+            "type": "vector",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": 0.0
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": 0.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 20.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 16.0
+              }
+            },
+            "vector-content": "input.svg"
+          }
+        ]
+      }
+    },
+    {
+      "design": "prop=Secondary",
+      "size": {
+        "width": 328.0,
+        "height": 50.0
+      },
+      "parameters": {
+        "login_text": "Login",
+        "login_icon": [
+          {
+            "type": "vector",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": 0.0
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": 0.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 24.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 24.0
+              }
+            }
+          },
+          {
+            "type": "vector",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": 0.0
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": 0.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 20.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 16.0
+              }
+            },
+            "vector-content": "input1.svg"
+          }
+        ]
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
